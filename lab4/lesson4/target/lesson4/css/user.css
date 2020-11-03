@@ -1,0 +1,52 @@
+:root {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: rgb(34, 34, 34);
+
+    --border-color: rgb(185, 185, 185);
+    --boder: 1px solid var(--border-color);
+    --border-radius: 6px;
+    --caption-color: #3B5998;
+}
+
+.middle main .user {
+    border: var(--boder);
+    border-radius: var(--border-radius);
+    overflow: auto;
+}
+
+.middle main .user .handle {
+    font-size: xx-large;
+    margin: 0.5rem;
+}
+
+.middle main .user img {
+    float: right;
+    margin: 0.5rem;
+}
+
+.middle main .prev-next-user .arrow-to-the-left-link {
+    display: inline;
+    font-size: 2rem;
+    color: var(--caption-color);
+    text-decoration: none
+}
+
+.middle main .prev-next-user .arrow-to-the-right-link {
+    display: inline;
+    font-size: 2rem;
+    color: var(--caption-color);
+    text-decoration: none
+}
+
+.middle main .prev-next-user .arrow-to-the-left-without-reference {
+    display: inline;
+    font-size: 2rem;
+    color: var(--border-color);
+}
+
+.middle main .prev-next-user .arrow-to-the-right-without-reference {
+    display: inline;
+    font-size: 2rem;
+    color: var(--border-color);
+}

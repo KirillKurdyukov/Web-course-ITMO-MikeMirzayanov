@@ -1,0 +1,59 @@
+:root {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: rgb(34, 34, 34);
+
+    --border-color: rgb(185, 185, 185);
+    --boder: 1px solid var(--border-color);
+    --border-radius: 6px;
+    --caption-color: #3B5998;
+}
+
+.middle main .datatable {
+    background: var(--border-color);
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid var(--border-color);
+    border-collapse: collapse;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.middle main .datatable .caption {
+    padding: 0.25rem;
+}
+
+.middle main .datatable th {
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.middle main .datatable td {
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.middle main .datatable th:nth-child(1),
+.middle main .datatable td:nth-child(1) {
+    border-left: 0 !important;
+}
+
+.middle main .datatable table tbody tr:nth-child(odd) {
+    background: var(--background-color);
+}
+
+.middle main .datatable table tbody tr:nth-child(even),
+.middle main .datatable table thead tr {
+    background: white;
+}
+
+.middle main .datatable table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+
