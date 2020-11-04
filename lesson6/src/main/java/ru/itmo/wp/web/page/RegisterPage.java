@@ -20,8 +20,9 @@ public class RegisterPage {
         User user = new User();
         user.setLogin(request.getParameter("login"));
         String password = request.getParameter("password");
-
-        userService.validateRegistration(user, password);
+        String passwordConfirmation = request.getParameter("passwordConfirmation");
+        user.setEmail(request.getParameter("email"));
+        userService.validateRegistration(user, password, passwordConfirmation);
         userService.register(user, password);
 
         request.getSession().setAttribute("message", "You are successfully registered!");

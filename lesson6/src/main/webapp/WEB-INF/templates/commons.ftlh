@@ -1,5 +1,10 @@
 <#-- @ftlvariable name="user" type="ru.itmo.wp.model.domain.User" -->
 <#-- @ftlvariable name="message" type="java.lang.String" -->
+<#-- @ftlvariable name="login" type="java.lang.String" -->
+<#-- @ftlvariable name="password" type="java.lang.String" -->
+<#-- @ftlvariable name="passwordConfirmation" type="java.lang.String" -->
+<#-- @ftlvariable name="error" type="java.lang.String" -->
+<#-- @ftlvariable name="email" type="java.lang.String" -->
 <#macro page>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,4 +68,65 @@
 </footer>
 </body>
 </html>
+</#macro>
+
+<#macro doForm nameForm>
+    <div class="form-box">
+        <div class="header">${nameForm}</div>
+        <div class="body">
+            <form method="post" action="">
+                <#if nameForm=="Register">
+                    <input type="hidden" name="action" value="register"/>
+                    <div class="field">
+                        <div class="name">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="value">
+                            <input id="email" name="email" value="${email!}"/>
+                        </div>
+                    </div>
+                <#else>
+                    <input type="hidden" name="action" value="enter"/>
+                </#if>
+                <div class="field">
+                    <div class="name">
+                        <label for="login">Login</label>
+                    </div>
+                    <div class="value">
+                        <input id="login" name="login" value="${login!}"/>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="name">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="value">
+                        <input id="password" name="password" type="password" value="${password!}"/>
+                    </div>
+                </div>
+                <#if nameForm=="Register">
+                    <div class="field">
+                        <div class="name">
+                            <label for="passwordConfirmation">PasswordConfirmation</label>
+                        </div>
+                        <div class="value">
+                            <input id="passwordConfirmation" name="passwordConfirmation" type="password" value="${passwordConfirmation!}"/>
+                        </div>
+                    </div>
+                </#if>
+                <#if error??>
+                    <div class="error">
+                        ${error!}
+                    </div>
+                </#if>
+                <div class="button-field">
+                    <#if nameForm=="Register">
+                        <input type="submit" value="Login">
+                    <#else>
+                        <input type="submit" value="Enter">
+                    </#if>
+                </div>
+            </form>
+        </div>
+    </div>
 </#macro>

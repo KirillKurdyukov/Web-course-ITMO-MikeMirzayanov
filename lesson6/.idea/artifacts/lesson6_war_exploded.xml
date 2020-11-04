@@ -11,7 +11,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="lab6" />
+          <element id="module-output" name="lesson6" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.30" />
@@ -28,7 +28,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/lesson6/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="lab6/web/Web" />
+      <element id="javaee-facet-resources" facet="lesson6/web/Web" />
     </root>
   </artifact>
 </component>
