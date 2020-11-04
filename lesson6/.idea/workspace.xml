@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1bbb34e2-9de3-4688-837d-6d01ee2f0030" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/lesson6_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/lesson6_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_30_0_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mariadb_jdbc_mariadb_java_client_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/artifacts/lesson6_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/artifacts/lesson6_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/libraries/Maven__com_google_guava_guava_30_0_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/libraries/Maven__org_freemarker_freemarker_2_3_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/libraries/Maven__org_mariadb_jdbc_mariadb_java_client_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/lesson6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/profile.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/model/database/DatabaseUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/model/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/model/exception/RepositoryException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/model/exception/ValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/model/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/model/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/web/FrontServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/web/StaticFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/web/exception/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/web/exception/RedirectException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/web/page/EnterPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/web/page/IndexPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/web/page/LogoutPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/web/page/NotFoundPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/web/page/RegisterPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ru/itmo/wp/web/page/UsersPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/WEB-INF/templates/EnterPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/WEB-INF/templates/IndexPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/WEB-INF/templates/NotFoundPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/WEB-INF/templates/RegisterPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/WEB-INF/templates/UsersPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/WEB-INF/templates/commons.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/css/datatable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/css/form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/img/comments_16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/img/date_16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/img/gb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/img/paperclip-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/img/ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/img/search-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/img/votedown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/webapp/img/voteup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/model/database/DatabaseUtils$DataSourceHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/model/database/DatabaseUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/model/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/model/exception/RepositoryException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/model/exception/ValidationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/model/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/model/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/FrontServlet$Route.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/FrontServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/StaticFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/exception/NotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/exception/RedirectException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/EnterPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/IndexPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/LogoutPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/NotFoundPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/RegisterPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/UsersPage.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jp7iIcuNbLJEFn1m8qp9Kk84X3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.38" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.38" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="lesson6:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_lesson6_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="34297" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="lesson6:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bbb34e2-9de3-4688-837d-6d01ee2f0030" name="Default Changelist" comment="" />
+      <created>1604489307062</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604489307062</updated>
+      <workItem from="1604489310172" duration="150000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="266" y="99" width="1076" height="744" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604489459267">
+      <screen x="72" y="27" width="1464" height="837" />
+    </state>
+    <state x="266" y="99" width="1076" height="744" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1464.837@72.27.1464.837" timestamp="1604489459267" />
+  </component>
+</project>
