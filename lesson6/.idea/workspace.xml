@@ -28,6 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd4af4c1-ef1b-4e3a-aa0e-2372a5ff221c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab6/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab6/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab6/.idea/artifacts/lesson6_war.xml" beforeDir="false" />
@@ -109,35 +110,72 @@
       <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/NotFoundPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/RegisterPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/UsersPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/lesson6_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/lesson6_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.properties" beforeDir="false" afterPath="$PROJECT_DIR$/profile.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/FrontServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/FrontServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/EnterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/EnterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/IndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/IndexPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/LogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/LogoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/NotFoundPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/NotFoundPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/EnterPage.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/EnterPage.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/RegisterPage.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/RegisterPage.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/UsersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/UsersPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/commons.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/commons.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/database/DatabaseUtils$DataSourceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/database/DatabaseUtils$DataSourceHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/database/DatabaseUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/database/DatabaseUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/exception/RepositoryException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/exception/RepositoryException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/exception/ValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/exception/ValidationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/FrontServlet$Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/FrontServlet$Route.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/FrontServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/FrontServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/StaticFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/StaticFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/exception/NotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/exception/NotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/exception/RedirectException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/exception/RedirectException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/EnterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/EnterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/IndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/IndexPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/LogoutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/LogoutPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/NotFoundPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/NotFoundPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/RegisterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/UsersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/UsersPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/database/DatabaseUtils$DataSourceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/database/DatabaseUtils$DataSourceHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/database/DatabaseUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/database/DatabaseUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/exception/RepositoryException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/exception/RepositoryException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/exception/ValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/exception/ValidationException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/FrontServlet$Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/FrontServlet$Route.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/FrontServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/FrontServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/StaticFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/StaticFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/exception/NotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/exception/NotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/exception/RedirectException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/exception/RedirectException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/EnterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/EnterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/IndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/IndexPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/LogoutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/LogoutPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/NotFoundPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/NotFoundPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/RegisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/templates/EnterPage.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/templates/EnterPage.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/templates/RegisterPage.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/templates/RegisterPage.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/UsersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/UsersPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/templates/commons.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/templates/commons.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -174,13 +212,15 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -267,7 +307,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604492112150</updated>
-      <workItem from="1604492115080" duration="9275000" />
+      <workItem from="1604492115080" duration="14860000" />
+      <workItem from="1604657751747" duration="12672000" />
     </task>
     <servers />
   </component>
@@ -284,88 +325,89 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="266" y="104" width="1076" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604492167356">
+    <state x="266" y="99" width="1076" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604519218057">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state x="266" y="104" width="1076" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1464.837@72.27.1464.837" timestamp="1604492167356" />
-    <state x="615" y="153" width="374" height="597" key="#com.intellij.ide.util.MemberChooser" timestamp="1604501953695">
+    <state x="266" y="99" width="1076" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1464.837@72.27.1464.837" timestamp="1604519218057" />
+    <state x="615" y="138" width="374" height="597" key="#com.intellij.ide.util.MemberChooser" timestamp="1604667620465">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state x="615" y="153" width="374" height="597" key="#com.intellij.ide.util.MemberChooser/72.27.1464.837@72.27.1464.837" timestamp="1604501953695" />
-    <state x="565" y="190" key="#xdebugger.evaluate" timestamp="1604498683430">
+    <state x="615" y="138" width="374" height="597" key="#com.intellij.ide.util.MemberChooser/72.27.1464.837@72.27.1464.837" timestamp="1604667620465" />
+    <state x="315" y="369" key="#xdebugger.evaluate" timestamp="1604664879006">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state x="565" y="190" key="#xdebugger.evaluate/72.27.1464.837@72.27.1464.837" timestamp="1604498683430" />
+    <state x="315" y="369" key="#xdebugger.evaluate/72.27.1464.837@72.27.1464.837" timestamp="1604664879006" />
     <state x="590" y="218" width="424" height="496" key="FileChooserDialogImpl" timestamp="1604492155195">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
     <state x="590" y="218" width="424" height="496" key="FileChooserDialogImpl/72.27.1464.837@72.27.1464.837" timestamp="1604492155195" />
-    <state width="972" height="204" key="GridCell.Tab.0.bottom" timestamp="1604505361975">
+    <state width="1212" height="241" key="GridCell.Tab.0.bottom" timestamp="1604670669483">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.0.bottom/72.27.1464.837@72.27.1464.837" timestamp="1604505361975" />
-    <state width="972" height="204" key="GridCell.Tab.0.center" timestamp="1604505361974">
+    <state width="1212" height="241" key="GridCell.Tab.0.bottom/72.27.1464.837@72.27.1464.837" timestamp="1604670669483" />
+    <state width="1212" height="241" key="GridCell.Tab.0.center" timestamp="1604670669483">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.0.center/72.27.1464.837@72.27.1464.837" timestamp="1604505361974" />
-    <state width="972" height="204" key="GridCell.Tab.0.left" timestamp="1604505361974">
+    <state width="1212" height="241" key="GridCell.Tab.0.center/72.27.1464.837@72.27.1464.837" timestamp="1604670669483" />
+    <state width="1212" height="241" key="GridCell.Tab.0.left" timestamp="1604670669482">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.0.left/72.27.1464.837@72.27.1464.837" timestamp="1604505361974" />
-    <state width="972" height="204" key="GridCell.Tab.0.right" timestamp="1604505361974">
+    <state width="1212" height="241" key="GridCell.Tab.0.left/72.27.1464.837@72.27.1464.837" timestamp="1604670669482" />
+    <state width="1212" height="241" key="GridCell.Tab.0.right" timestamp="1604670669483">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.0.right/72.27.1464.837@72.27.1464.837" timestamp="1604505361974" />
-    <state width="972" height="204" key="GridCell.Tab.1.bottom" timestamp="1604505361836">
+    <state width="1212" height="241" key="GridCell.Tab.0.right/72.27.1464.837@72.27.1464.837" timestamp="1604670669483" />
+    <state width="1212" height="241" key="GridCell.Tab.1.bottom" timestamp="1604670669485">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.1.bottom/72.27.1464.837@72.27.1464.837" timestamp="1604505361836" />
-    <state width="972" height="204" key="GridCell.Tab.1.center" timestamp="1604505361836">
+    <state width="1212" height="241" key="GridCell.Tab.1.bottom/72.27.1464.837@72.27.1464.837" timestamp="1604670669485" />
+    <state width="1212" height="241" key="GridCell.Tab.1.center" timestamp="1604670669484">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.1.center/72.27.1464.837@72.27.1464.837" timestamp="1604505361836" />
-    <state width="972" height="204" key="GridCell.Tab.1.left" timestamp="1604505361835">
+    <state width="1212" height="241" key="GridCell.Tab.1.center/72.27.1464.837@72.27.1464.837" timestamp="1604670669484" />
+    <state width="1212" height="241" key="GridCell.Tab.1.left" timestamp="1604670669484">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.1.left/72.27.1464.837@72.27.1464.837" timestamp="1604505361835" />
-    <state width="972" height="204" key="GridCell.Tab.1.right" timestamp="1604505361836">
+    <state width="1212" height="241" key="GridCell.Tab.1.left/72.27.1464.837@72.27.1464.837" timestamp="1604670669484" />
+    <state width="1212" height="241" key="GridCell.Tab.1.right" timestamp="1604670669484">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.1.right/72.27.1464.837@72.27.1464.837" timestamp="1604505361836" />
-    <state width="972" height="204" key="GridCell.Tab.2.bottom" timestamp="1604505361837">
+    <state width="1212" height="241" key="GridCell.Tab.1.right/72.27.1464.837@72.27.1464.837" timestamp="1604670669484" />
+    <state width="1212" height="241" key="GridCell.Tab.2.bottom" timestamp="1604670669484">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.2.bottom/72.27.1464.837@72.27.1464.837" timestamp="1604505361837" />
-    <state width="972" height="204" key="GridCell.Tab.2.center" timestamp="1604505361836">
+    <state width="1212" height="241" key="GridCell.Tab.2.bottom/72.27.1464.837@72.27.1464.837" timestamp="1604670669484" />
+    <state width="1212" height="241" key="GridCell.Tab.2.center" timestamp="1604670669484">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.2.center/72.27.1464.837@72.27.1464.837" timestamp="1604505361836" />
-    <state width="972" height="204" key="GridCell.Tab.2.left" timestamp="1604505361836">
+    <state width="1212" height="241" key="GridCell.Tab.2.center/72.27.1464.837@72.27.1464.837" timestamp="1604670669484" />
+    <state width="1212" height="241" key="GridCell.Tab.2.left" timestamp="1604670669483">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.2.left/72.27.1464.837@72.27.1464.837" timestamp="1604505361836" />
-    <state width="972" height="204" key="GridCell.Tab.2.right" timestamp="1604505361837">
+    <state width="1212" height="241" key="GridCell.Tab.2.left/72.27.1464.837@72.27.1464.837" timestamp="1604670669483" />
+    <state width="1212" height="241" key="GridCell.Tab.2.right" timestamp="1604670669484">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.2.right/72.27.1464.837@72.27.1464.837" timestamp="1604505361837" />
-    <state width="972" height="204" key="GridCell.Tab.3.bottom" timestamp="1604505361838">
+    <state width="1212" height="241" key="GridCell.Tab.2.right/72.27.1464.837@72.27.1464.837" timestamp="1604670669484" />
+    <state width="1212" height="241" key="GridCell.Tab.3.bottom" timestamp="1604665005188">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.3.bottom/72.27.1464.837@72.27.1464.837" timestamp="1604505361838" />
-    <state width="972" height="204" key="GridCell.Tab.3.center" timestamp="1604505361837">
+    <state width="1212" height="241" key="GridCell.Tab.3.bottom/72.27.1464.837@72.27.1464.837" timestamp="1604665005188" />
+    <state width="1212" height="241" key="GridCell.Tab.3.center" timestamp="1604665005187">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.3.center/72.27.1464.837@72.27.1464.837" timestamp="1604505361837" />
-    <state width="972" height="204" key="GridCell.Tab.3.left" timestamp="1604505361837">
+    <state width="1212" height="241" key="GridCell.Tab.3.center/72.27.1464.837@72.27.1464.837" timestamp="1604665005187" />
+    <state width="1212" height="241" key="GridCell.Tab.3.left" timestamp="1604665005187">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.3.left/72.27.1464.837@72.27.1464.837" timestamp="1604505361837" />
-    <state width="972" height="204" key="GridCell.Tab.3.right" timestamp="1604505361838">
+    <state width="1212" height="241" key="GridCell.Tab.3.left/72.27.1464.837@72.27.1464.837" timestamp="1604665005187" />
+    <state width="1212" height="241" key="GridCell.Tab.3.right" timestamp="1604665005187">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="972" height="204" key="GridCell.Tab.3.right/72.27.1464.837@72.27.1464.837" timestamp="1604505361838" />
+    <state width="1212" height="241" key="GridCell.Tab.3.right/72.27.1464.837@72.27.1464.837" timestamp="1604665005187" />
     <state width="972" height="204" key="GridCell.Tab.4.bottom" timestamp="1604492219390">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
@@ -382,34 +424,53 @@
       <screen x="72" y="27" width="1464" height="837" />
     </state>
     <state width="972" height="204" key="GridCell.Tab.4.right/72.27.1464.837@72.27.1464.837" timestamp="1604492219389" />
+    <state width="732" height="421" key="XDebugger.FullValuePopup" timestamp="1604519353219">
+      <screen x="72" y="27" width="1464" height="837" />
+    </state>
+    <state width="732" height="421" key="XDebugger.FullValuePopup/72.27.1464.837@72.27.1464.837" timestamp="1604519353219" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/FrontServlet.java</url>
-          <line>117</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/FrontServlet.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/FrontServlet.java</url>
-          <line>119</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.java</url>
-          <line>120</line>
+          <line>135</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.java</url>
-          <line>124</line>
+          <line>139</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/FrontServlet.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/FrontServlet.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/FrontServlet.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/FrontServlet.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/FrontServlet.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

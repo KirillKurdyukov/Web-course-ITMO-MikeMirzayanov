@@ -5,6 +5,7 @@
 <#-- @ftlvariable name="passwordConfirmation" type="java.lang.String" -->
 <#-- @ftlvariable name="error" type="java.lang.String" -->
 <#-- @ftlvariable name="email" type="java.lang.String" -->
+<#-- @ftlvariable name="userCount" type="long" -->
 <#macro page>
 <!DOCTYPE html>
 <html lang="en">
@@ -64,7 +65,8 @@
     </main>
 </div>
 <footer>
-    <a href="/index">Codeforces</a> &copy; 2020 by Mike Mirzayanov
+    <a href="/index">Codeforces</a> &copy; 2020 by Mike Mirzayanov and Kirill Kurdyukov
+    <div class="userCount"> there are already ${userCount!} users on our site! </div>
 </footer>
 </body>
 </html>
@@ -90,7 +92,11 @@
                 </#if>
                 <div class="field">
                     <div class="name">
-                        <label for="login">Login</label>
+                        <#if nameForm=="Register">
+                            <label for="login">Login</label>
+                        <#else>
+                            <label for="login">LoginOrEmail</label>
+                        </#if>
                     </div>
                     <div class="value">
                         <input id="login" name="login" value="${login!}"/>

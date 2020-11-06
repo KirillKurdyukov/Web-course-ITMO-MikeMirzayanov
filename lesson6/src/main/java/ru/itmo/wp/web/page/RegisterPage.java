@@ -9,12 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 @SuppressWarnings({"unused", "RedundantSuppression"})
-public class RegisterPage {
-    private final UserService userService = new UserService();
-
-    private void action(HttpServletRequest request, Map<String, Object> view) {
-        // No operations.
-    }
+public class RegisterPage extends Page {
 
     private void register(HttpServletRequest request, Map<String, Object> view) throws ValidationException {
         User user = new User();
@@ -24,8 +19,7 @@ public class RegisterPage {
         user.setEmail(request.getParameter("email"));
         userService.validateRegistration(user, password, passwordConfirmation);
         userService.register(user, password);
-
-        request.getSession().setAttribute("message", "You are successfully registered!");
+        setMessage("You are successfully registered!");
         throw new RedirectException("/index");
     }
 }

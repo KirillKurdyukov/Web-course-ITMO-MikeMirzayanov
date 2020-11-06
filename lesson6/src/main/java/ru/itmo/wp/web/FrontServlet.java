@@ -18,9 +18,7 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class FrontServlet extends HttpServlet {
     private static final String BASE_PAGE_PACKAGE = FrontServlet.class.getName().substring(
@@ -112,6 +110,23 @@ public class FrontServlet extends HttpServlet {
         }
     }
 
+    private Method getMethod(Class<?> pageClass, String name) throws NotFoundException {
+        Method method = null;
+        for (Class<?> clazz = pageClass; method == null && clazz != null; clazz = clazz.getSuperclass()) {
+            try {
+                method = clazz.getDeclaredMethod(name, HttpServletRequest.class, Map.class);
+            } catch (NoSuchMethodException ignored) {
+                // No operations.
+            }
+        }
+
+        if (method == null) {
+            throw new NotFoundException();
+        }
+
+        return method;
+    }
+
     private void process(Route route,
                          HttpServletRequest request,
                          HttpServletResponse response) throws NotFoundException, ServletException, IOException {
@@ -119,19 +134,6 @@ public class FrontServlet extends HttpServlet {
         try {
             pageClass = Class.forName(route.getClassName());
         } catch (ClassNotFoundException e) {
-            throw new NotFoundException();
-        }
-
-        Method method = null;
-        for (Class<?> clazz = pageClass; method == null && clazz != null; clazz = clazz.getSuperclass()) {
-            try {
-                method = pageClass.getDeclaredMethod(route.getAction(), HttpServletRequest.class, Map.class);
-            } catch (NoSuchMethodException ignored) {
-                // No operations.
-            }
-        }
-
-        if (method == null) {
             throw new NotFoundException();
         }
 
@@ -143,50 +145,44 @@ public class FrontServlet extends HttpServlet {
         }
 
         Map<String, Object> view = new HashMap<>();
-        putUser(request, view);
-
-        try {
-            method.setAccessible(true);
-            method.invoke(page, request, view);
-        } catch (IllegalAccessException e) {
-            throw new ServletException("Unable to run action [pageClass=" + pageClass + ", method=" + method + "].", e);
-        } catch (InvocationTargetException e) {
-            Throwable cause = e.getCause();
-            if (cause instanceof RedirectException) {
-                RedirectException redirectException = (RedirectException) cause;
-                response.sendRedirect(redirectException.getLocation());
-                return;
-            } else if (cause instanceof ValidationException) {
-                ValidationException validationException = (ValidationException) cause;
-
-                view.put("error", validationException.getMessage());
-                for (Map.Entry<String, String[]> param : request.getParameterMap().entrySet()) {
-                    String key = param.getKey();
-                    if (param.getValue() != null && param.getValue().length == 1) {
-                        String value = param.getValue()[0];
-                        view.put(key, value);
-                    }
-                }
-            } else {
+        List<String> namesOfMethods = List.of("before", route.getAction(), "after");
+        for (String name : namesOfMethods) {
+            Method method = getMethod(pageClass, name);
+            try {
+                method.setAccessible(true);
+                method.invoke(page, request, view);
+            } catch (IllegalAccessException e) {
                 throw new ServletException("Unable to run action [pageClass=" + pageClass + ", method=" + method + "].", e);
+            } catch (InvocationTargetException e) {
+                Throwable cause = e.getCause();
+                if (cause instanceof RedirectException) {
+                    RedirectException redirectException = (RedirectException) cause;
+                    response.sendRedirect(redirectException.getLocation());
+                    return;
+                } else if (cause instanceof ValidationException) {
+                    ValidationException validationException = (ValidationException) cause;
+                    view.put("error", validationException.getMessage());
+                    for (Map.Entry<String, String[]> param : request.getParameterMap().entrySet()) {
+                        String key = param.getKey();
+                        if (param.getValue() != null && param.getValue().length == 1) {
+                            String value = param.getValue()[0];
+                            view.put(key, value);
+                        }
+                    }
+                } else {
+                    throw new ServletException("Unable to run action [pageClass=" + pageClass + ", method=" + method + "].", e);
+                }
             }
         }
 
         Template template = newTemplate(pageClass.getSimpleName() + ".ftlh");
-
+        Method method = getMethod(pageClass, route.getAction());
         response.setContentType("text/html");
         response.setCharacterEncoding(StandardCharsets.UTF_8.name());
         try {
             template.process(view, response.getWriter());
         } catch (TemplateException e) {
             throw new ServletException("Can't render template [pageClass=" + pageClass + ", method=" + method + "].", e);
-        }
-    }
-
-    private void putUser(HttpServletRequest request, Map<String, Object> view) {
-        User user = (User) request.getSession().getAttribute("user");
-        if (user != null) {
-            view.put("user", user);
         }
     }
 

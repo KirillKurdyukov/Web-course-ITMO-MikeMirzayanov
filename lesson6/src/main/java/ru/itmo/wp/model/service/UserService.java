@@ -16,27 +16,26 @@ public class UserService {
     private static final String PASSWORD_SALT = "177d4b5f2e4f4edafa7404533973c04c513ac619";
 
     public void validateRegistration(User user, String password, String passwordConfirmation) throws ValidationException {
-        if (!passwordConfirmation.equals(password)) {
-            throw new ValidationException("Passwords do not match");
-        }
         if (!user.getEmail().contains("@")) {
             throw new ValidationException("Email is incorrect");
         }
         if (userRepository.findByEmail(user.getEmail()) != null) {
             throw new ValidationException("Email is already in use");
         }
+
         if (Strings.isNullOrEmpty(user.getLogin())) {
             throw new ValidationException("Login is required");
-        }
-        if (!user.getLogin().matches("[a-z]+")) {
-            throw new ValidationException("Login can contain only lowercase Latin letters");
         }
         if (user.getLogin().length() > 8) {
             throw new ValidationException("Login can't be longer than 8 letters");
         }
+        if (!user.getLogin().matches("[a-z]+")) {
+            throw new ValidationException("Login can contain only lowercase Latin letters");
+        }
         if (userRepository.findByLogin(user.getLogin()) != null) {
             throw new ValidationException("Login is already in use");
         }
+
         if (Strings.isNullOrEmpty(password)) {
             throw new ValidationException("Password is required");
         }
@@ -46,6 +45,13 @@ public class UserService {
         if (password.length() > 12) {
             throw new ValidationException("Password can't be longer than 12 characters");
         }
+        if (!passwordConfirmation.equals(password)) {
+            throw new ValidationException("Passwords do not match");
+        }
+    }
+
+    public long findCount() {
+        return userRepository.findCount();
     }
 
     public void register(User user, String password) {
@@ -61,13 +67,13 @@ public class UserService {
     }
 
     public void validateEnter(String login, String password) throws ValidationException {
-        User user = userRepository.findByLoginAndPasswordSha(login, getPasswordSha(password));
+        User user = userRepository.findByLoginOrEmailAndPasswordSha(login, getPasswordSha(password));
         if (user == null) {
             throw new ValidationException("Invalid login or password");
         }
     }
 
-    public User findByLoginAndPassword(String login, String password) {
-        return userRepository.findByLoginAndPasswordSha(login, getPasswordSha(password));
+    public User findByLoginOrEmailAndPassword(String login, String password) {
+        return userRepository.findByLoginOrEmailAndPasswordSha(login, getPasswordSha(password));
     }
 }

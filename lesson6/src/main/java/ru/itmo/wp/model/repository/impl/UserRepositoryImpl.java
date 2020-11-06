@@ -14,6 +14,20 @@ public class UserRepositoryImpl implements UserRepository {
     private final DataSource DATA_SOURCE = DatabaseUtils.getDataSource();
 
     @Override
+    public long findCount() {
+        try (Connection connection = DATA_SOURCE.getConnection()) {
+            try (PreparedStatement statement = connection.prepareStatement("SELECT COUNT(*) FROM `User`")) {
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    resultSet.next();
+                    return resultSet.getLong(1);
+                }
+            }
+        } catch (SQLException e) {
+            throw new RepositoryException("Can't find User.", e);
+        }
+    }
+
+    @Override
     public User find(long id) {
         try (Connection connection = DATA_SOURCE.getConnection()) {
             try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM User WHERE id=?")) {
@@ -56,11 +70,12 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public User findByLoginAndPasswordSha(String login, String passwordSha) {
+    public User findByLoginOrEmailAndPasswordSha(String loginOrEmail, String passwordSha) {
         try (Connection connection = DATA_SOURCE.getConnection()) {
-            try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM User WHERE login=? AND passwordSha=?")) {
-                statement.setString(1, login);
-                statement.setString(2, passwordSha);
+            try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM User WHERE (login=? OR email=?) AND passwordSha=?")) {
+                statement.setString(1, loginOrEmail);
+                statement.setString(2, loginOrEmail);
+                statement.setString(3, passwordSha);
                 try (ResultSet resultSet = statement.executeQuery()) {
                     return toUser(statement.getMetaData(), resultSet);
                 }
