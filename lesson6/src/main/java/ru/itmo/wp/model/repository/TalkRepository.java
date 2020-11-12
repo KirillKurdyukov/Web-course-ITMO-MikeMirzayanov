@@ -1,6 +1,8 @@
 package ru.itmo.wp.model.repository;
 
-public interface TalkRepository {
-    void save(Long idSource, Long idTarget, String message);
+import ru.itmo.wp.model.domain.Talk;
 
+public interface TalkRepository {
+    void save(Talk talk);
+    Talk find(Long id);
 }

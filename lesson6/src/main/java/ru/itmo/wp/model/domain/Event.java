@@ -5,7 +5,7 @@ import jdk.jshell.spi.ExecutionControl;
 import java.util.Date;
 
 public class Event {
-    enum Type {
+    public enum Type {
         LOGOUT, ENTER
     }
     private long id;

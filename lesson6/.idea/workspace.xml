@@ -28,13 +28,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd4af4c1-ef1b-4e3a-aa0e-2372a5ff221c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/domain/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/EventRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/TalkRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/EventRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/domain/Talk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/service/EventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/service/TalkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/TalksPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/TalksPage.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab6/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab6/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab6/.idea/artifacts/lesson6_war.xml" beforeDir="false" />
@@ -117,18 +115,36 @@
       <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/RegisterPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/UsersPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/domain/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/domain/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/EventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/EventRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/TalkRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/TalkRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/EventRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/EventRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/EnterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/EnterPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/LogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/LogoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/UsersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/UsersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/commons.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/commons.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/domain/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/domain/Event.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/repository/EventRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/repository/EventRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/repository/impl/EventRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/repository/impl/EventRepositoryImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/EnterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/EnterPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/LogoutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/LogoutPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/Page.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/RegisterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/UsersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/UsersPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/domain/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/domain/Event.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/EventRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/EventRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/impl/EventRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/impl/EventRepositoryImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/EnterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/EnterPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/LogoutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/LogoutPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/Page.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/RegisterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/UsersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/UsersPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +156,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -168,6 +185,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -277,7 +295,7 @@
       <workItem from="1604657751747" duration="12672000" />
       <workItem from="1605186450770" duration="843000" />
       <workItem from="1605189125377" duration="5170000" />
-      <workItem from="1605210486631" duration="3032000" />
+      <workItem from="1605210486631" duration="11231000" />
     </task>
     <servers />
   </component>
@@ -301,10 +319,10 @@
       <screen x="72" y="27" width="1464" height="837" />
     </state>
     <state x="266" y="79" width="1076" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1464.837@72.27.1464.837" timestamp="1605198693815" />
-    <state x="615" y="123" width="374" height="597" key="#com.intellij.ide.util.MemberChooser" timestamp="1605213541921">
+    <state x="615" y="103" width="374" height="597" key="#com.intellij.ide.util.MemberChooser" timestamp="1605218250143">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state x="615" y="123" width="374" height="597" key="#com.intellij.ide.util.MemberChooser/72.27.1464.837@72.27.1464.837" timestamp="1605213541921" />
+    <state x="615" y="103" width="374" height="597" key="#com.intellij.ide.util.MemberChooser/72.27.1464.837@72.27.1464.837" timestamp="1605218250143" />
     <state x="72" y="22" width="1318" height="842" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605190975030">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
@@ -321,54 +339,54 @@
       <screen x="72" y="27" width="1464" height="837" />
     </state>
     <state x="590" y="218" width="424" height="496" key="FileChooserDialogImpl/72.27.1464.837@72.27.1464.837" timestamp="1604492155195" />
-    <state width="1212" height="181" key="GridCell.Tab.0.bottom" timestamp="1605199747926">
+    <state width="1212" height="181" key="GridCell.Tab.0.bottom" timestamp="1605221149041">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1212" height="181" key="GridCell.Tab.0.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605199747926" />
-    <state width="1212" height="181" key="GridCell.Tab.0.center" timestamp="1605199747925">
+    <state width="1212" height="181" key="GridCell.Tab.0.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605221149041" />
+    <state width="1212" height="181" key="GridCell.Tab.0.center" timestamp="1605221149041">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1212" height="181" key="GridCell.Tab.0.center/72.27.1464.837@72.27.1464.837" timestamp="1605199747925" />
-    <state width="1212" height="181" key="GridCell.Tab.0.left" timestamp="1605199747924">
+    <state width="1212" height="181" key="GridCell.Tab.0.center/72.27.1464.837@72.27.1464.837" timestamp="1605221149041" />
+    <state width="1212" height="181" key="GridCell.Tab.0.left" timestamp="1605221149040">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1212" height="181" key="GridCell.Tab.0.left/72.27.1464.837@72.27.1464.837" timestamp="1605199747924" />
-    <state width="1212" height="181" key="GridCell.Tab.0.right" timestamp="1605199747925">
+    <state width="1212" height="181" key="GridCell.Tab.0.left/72.27.1464.837@72.27.1464.837" timestamp="1605221149040" />
+    <state width="1212" height="181" key="GridCell.Tab.0.right" timestamp="1605221149041">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1212" height="181" key="GridCell.Tab.0.right/72.27.1464.837@72.27.1464.837" timestamp="1605199747925" />
-    <state width="1212" height="181" key="GridCell.Tab.1.bottom" timestamp="1605199747930">
+    <state width="1212" height="181" key="GridCell.Tab.0.right/72.27.1464.837@72.27.1464.837" timestamp="1605221149041" />
+    <state width="1212" height="181" key="GridCell.Tab.1.bottom" timestamp="1605221148966">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1212" height="181" key="GridCell.Tab.1.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605199747930" />
-    <state width="1212" height="181" key="GridCell.Tab.1.center" timestamp="1605199747929">
+    <state width="1212" height="181" key="GridCell.Tab.1.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605221148966" />
+    <state width="1212" height="181" key="GridCell.Tab.1.center" timestamp="1605221148965">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1212" height="181" key="GridCell.Tab.1.center/72.27.1464.837@72.27.1464.837" timestamp="1605199747929" />
-    <state width="1212" height="181" key="GridCell.Tab.1.left" timestamp="1605199747928">
+    <state width="1212" height="181" key="GridCell.Tab.1.center/72.27.1464.837@72.27.1464.837" timestamp="1605221148965" />
+    <state width="1212" height="181" key="GridCell.Tab.1.left" timestamp="1605221148965">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1212" height="181" key="GridCell.Tab.1.left/72.27.1464.837@72.27.1464.837" timestamp="1605199747928" />
-    <state width="1212" height="181" key="GridCell.Tab.1.right" timestamp="1605199747929">
+    <state width="1212" height="181" key="GridCell.Tab.1.left/72.27.1464.837@72.27.1464.837" timestamp="1605221148965" />
+    <state width="1212" height="181" key="GridCell.Tab.1.right" timestamp="1605221148965">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1212" height="181" key="GridCell.Tab.1.right/72.27.1464.837@72.27.1464.837" timestamp="1605199747929" />
-    <state width="1212" height="181" key="GridCell.Tab.2.bottom" timestamp="1605199747928">
+    <state width="1212" height="181" key="GridCell.Tab.1.right/72.27.1464.837@72.27.1464.837" timestamp="1605221148965" />
+    <state width="1212" height="181" key="GridCell.Tab.2.bottom" timestamp="1605221148966">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1212" height="181" key="GridCell.Tab.2.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605199747928" />
-    <state width="1212" height="181" key="GridCell.Tab.2.center" timestamp="1605199747926">
+    <state width="1212" height="181" key="GridCell.Tab.2.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605221148966" />
+    <state width="1212" height="181" key="GridCell.Tab.2.center" timestamp="1605221148966">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1212" height="181" key="GridCell.Tab.2.center/72.27.1464.837@72.27.1464.837" timestamp="1605199747926" />
-    <state width="1212" height="181" key="GridCell.Tab.2.left" timestamp="1605199747926">
+    <state width="1212" height="181" key="GridCell.Tab.2.center/72.27.1464.837@72.27.1464.837" timestamp="1605221148966" />
+    <state width="1212" height="181" key="GridCell.Tab.2.left" timestamp="1605221148966">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1212" height="181" key="GridCell.Tab.2.left/72.27.1464.837@72.27.1464.837" timestamp="1605199747926" />
-    <state width="1212" height="181" key="GridCell.Tab.2.right" timestamp="1605199747927">
+    <state width="1212" height="181" key="GridCell.Tab.2.left/72.27.1464.837@72.27.1464.837" timestamp="1605221148966" />
+    <state width="1212" height="181" key="GridCell.Tab.2.right" timestamp="1605221148966">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1212" height="181" key="GridCell.Tab.2.right/72.27.1464.837@72.27.1464.837" timestamp="1605199747927" />
+    <state width="1212" height="181" key="GridCell.Tab.2.right/72.27.1464.837@72.27.1464.837" timestamp="1605221148966" />
     <state width="1212" height="181" key="GridCell.Tab.3.bottom" timestamp="1605198196701">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
@@ -405,6 +423,10 @@
       <screen x="72" y="27" width="1464" height="837" />
     </state>
     <state width="265" height="500" key="HiddenNamespacesPopup/72.27.1464.837@72.27.1464.837" timestamp="1605198552100" />
+    <state x="340" y="104" width="924" height="696" key="Maven.ArtifactSearchDialog" timestamp="1605215405875">
+      <screen x="72" y="27" width="1464" height="837" />
+    </state>
+    <state x="340" y="104" width="924" height="696" key="Maven.ArtifactSearchDialog/72.27.1464.837@72.27.1464.837" timestamp="1605215405875" />
     <state width="732" height="421" key="XDebugger.FullValuePopup" timestamp="1604519353219">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
@@ -423,16 +445,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.java</url>
-          <line>139</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.java</url>
           <line>75</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -442,13 +454,8 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/RegisterPage.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/EventRepositoryImpl.java</url>
-          <line>18</line>
+          <line>59</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
