@@ -2,7 +2,6 @@ package ru.itmo.wp.web.page;
 
 import ru.itmo.wp.model.domain.User;
 import ru.itmo.wp.model.exception.ValidationException;
-import ru.itmo.wp.model.service.UserService;
 import ru.itmo.wp.web.exception.RedirectException;
 
 import javax.servlet.http.HttpServletRequest;
@@ -19,6 +18,7 @@ public class RegisterPage extends Page {
         user.setEmail(request.getParameter("email"));
         userService.validateRegistration(user, password, passwordConfirmation);
         userService.register(user, password);
+        userService.saveEvent(Event.ENTER, user);
         setMessage("You are successfully registered!");
         throw new RedirectException("/index");
     }

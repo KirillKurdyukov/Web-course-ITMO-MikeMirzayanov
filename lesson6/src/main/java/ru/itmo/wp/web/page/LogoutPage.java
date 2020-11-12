@@ -8,6 +8,7 @@ import java.util.Map;
 @SuppressWarnings({"unused", "RedundantSuppression"})
 public class LogoutPage extends Page {
     private void action(HttpServletRequest request, Map<String, Object> view) {
+        userService.saveEvent(Event.LOGOUT, getUser());
         request.getSession().removeAttribute("user");
         setMessage("Good bye. Hope to see you soon!");
         throw new RedirectException("/index");

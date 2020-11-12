@@ -4,7 +4,9 @@ import com.google.common.base.Strings;
 import com.google.common.hash.Hashing;
 import ru.itmo.wp.model.domain.User;
 import ru.itmo.wp.model.exception.ValidationException;
+import ru.itmo.wp.model.repository.EventRepository;
 import ru.itmo.wp.model.repository.UserRepository;
+import ru.itmo.wp.model.repository.impl.EventRepositoryImpl;
 import ru.itmo.wp.model.repository.impl.UserRepositoryImpl;
 
 import java.nio.charset.StandardCharsets;
@@ -13,6 +15,7 @@ import java.util.List;
 /** @noinspection UnstableApiUsage*/
 public class UserService {
     private final UserRepository userRepository = new UserRepositoryImpl();
+    private final EventRepository eventRepository = new EventRepositoryImpl();
     private static final String PASSWORD_SALT = "177d4b5f2e4f4edafa7404533973c04c513ac619";
 
     public void validateRegistration(User user, String password, String passwordConfirmation) throws ValidationException {
@@ -57,6 +60,8 @@ public class UserService {
     public void register(User user, String password) {
         userRepository.save(user, getPasswordSha(password));
     }
+
+    public void saveEvent(Event event, User user) {eventRepository.save(event, user);}
 
     private String getPasswordSha(String password) {
         return Hashing.sha256().hashBytes((PASSWORD_SALT + password).getBytes(StandardCharsets.UTF_8)).toString();

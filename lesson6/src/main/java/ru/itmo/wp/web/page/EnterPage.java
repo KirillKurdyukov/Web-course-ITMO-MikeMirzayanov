@@ -2,7 +2,6 @@ package ru.itmo.wp.web.page;
 
 import ru.itmo.wp.model.domain.User;
 import ru.itmo.wp.model.exception.ValidationException;
-import ru.itmo.wp.model.service.UserService;
 import ru.itmo.wp.web.exception.RedirectException;
 
 import javax.servlet.http.HttpServletRequest;
@@ -19,7 +18,7 @@ public class EnterPage extends Page {
         User user = userService.findByLoginOrEmailAndPassword(loginOrEmail, password);
         setUser(user);
         setMessage("Hello, " + user.getLogin());
-
+        userService.saveEvent(Event.ENTER, user);
         throw new RedirectException("/index");
     }
 }
