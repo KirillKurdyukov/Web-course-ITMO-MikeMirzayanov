@@ -1,13 +1,15 @@
 package ru.itmo.wp.model.repository.impl;
 
 import ru.itmo.wp.model.database.DatabaseUtils;
-import ru.itmo.wp.model.domain.Event;
 import ru.itmo.wp.model.domain.Talk;
+import ru.itmo.wp.model.domain.User;
 import ru.itmo.wp.model.exception.RepositoryException;
 import ru.itmo.wp.model.repository.TalkRepository;
 
 import javax.sql.DataSource;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TalkRepositoryImpl implements TalkRepository {
     private final DataSource DATA_SOURCE = DatabaseUtils.getDataSource();
@@ -27,9 +29,31 @@ public class TalkRepositoryImpl implements TalkRepository {
     }
 
     @Override
+    public List<Talk> getMessages(long sourceUserId, long targetUserId) {
+        List<Talk> talks = new ArrayList<>();
+        try (Connection connection = DATA_SOURCE.getConnection()) {
+            try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM Talk WHERE (sourceUserId=? AND targetUserId=?) OR (sourceUserId=? AND targetUserId=?)")) {
+                statement.setString(1, Long.toString(sourceUserId));
+                statement.setString(2, Long.toString(targetUserId));
+                statement.setString(3, Long.toString(targetUserId));
+                statement.setString(4, Long.toString(sourceUserId));
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    Talk talk;
+                    while ((talk = toTalk(statement.getMetaData(), resultSet)) != null) {
+                        talks.add(talk);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            throw new RepositoryException("Can't find User.", e);
+        }
+        return talks;
+    }
+
+    @Override
     public void save(Talk talk) {
         try (Connection connection = DATA_SOURCE.getConnection()) {
-            try (PreparedStatement statement = connection.prepareStatement("INSERT INTO `Talk` (`sourceUserId`, `targerUserId`, `text`, `creationTime` ) VALUES (?, ?, ?, NOW())", Statement.RETURN_GENERATED_KEYS)) {
+            try (PreparedStatement statement = connection.prepareStatement("INSERT INTO `Talk` (`sourceUserId`, `targetUserId`, `text`, `creationTime` ) VALUES (?, ?, ?, NOW())", Statement.RETURN_GENERATED_KEYS)) {
                 statement.setString(1, Long.toString(talk.getSourceUserId()));
                 statement.setString(2, Long.toString(talk.getTargetUserId()));
                 statement.setString(3, talk.getText());
