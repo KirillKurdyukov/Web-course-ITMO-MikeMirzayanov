@@ -2,7 +2,6 @@ package ru.itmo.wp.model.repository.impl;
 
 import ru.itmo.wp.model.database.DatabaseUtils;
 import ru.itmo.wp.model.domain.Talk;
-import ru.itmo.wp.model.domain.User;
 import ru.itmo.wp.model.exception.RepositoryException;
 import ru.itmo.wp.model.repository.TalkRepository;
 

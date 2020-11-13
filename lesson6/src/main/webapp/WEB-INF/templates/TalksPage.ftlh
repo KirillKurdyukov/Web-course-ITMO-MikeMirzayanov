@@ -2,7 +2,7 @@
 <#-- @ftlvariable name="users" type="ru.itmo.wp.model.domain.User[]" -->
 <#-- @ftlvariable name="talk" type="ru.itmo.wp.model.domain.Talk" -->
 <#-- @ftlvariable name="talks" type="ru.itmo.wp.model.domain.Talk[]" -->
-
+<#-- @ftlvariable name="targetUserId" type="long" -->
 <#import "commons.ftlh" as c>
 
 <@c.page>
@@ -37,18 +37,23 @@
       <form method="post">
          <input type="hidden" name="action" value="sendMessage">
          <div class="send-message">
-            Your message:
-         </div>
-         <label>
-            <textarea name="message" style="resize: none"></textarea>
-         </label>
-         <div class="button-field">
-            <input type="submit" value="Send">
-         </div>
+            <#if find(targetUserId)??>
+               Your message for user ${find(targetUserId)}:
+               </div>
+               <label>
+                  <textarea name="message" style="resize: none"></textarea>
+               </label>
+               <div class="button-field">
+                  <input type="submit" value="Send">
+               </div>
+            <#else>
+               No correct targetID. I think that you want to break my site.
+            </#if>
       </form>
    </#if>
 
-   <#if talks??>
+
+   <#if talks?? && find(targetUserId)??>
       <div class="datatable">
          <div class="caption">User</div>
          <table>

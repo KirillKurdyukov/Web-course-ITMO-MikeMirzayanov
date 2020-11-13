@@ -2,7 +2,7 @@
 <#-- @ftlvariable name="users" type="ru.itmo.wp.model.domain.User[]" -->
 <#-- @ftlvariable name="talk" type="ru.itmo.wp.model.domain.Talk" -->
 <#-- @ftlvariable name="talks" type="ru.itmo.wp.model.domain.Talk[]" -->
-
+<#-- @ftlvariable name="targetUserId" type="long" -->
 <#import "commons.ftlh" as c>
 
 <@c.page>
@@ -12,7 +12,7 @@
          <table>
             <tbody>
                <tr>
-                  <td>You ${user.login}</td>
+                  <td style="font-weight: bold;">You ${user.login}</td>
                   <td>Send Message:</td>
                   <td>
                      <label>
@@ -37,7 +37,7 @@
       <form method="post">
          <input type="hidden" name="action" value="sendMessage">
          <div class="send-message">
-            Your message:
+            Your message for user ${find(targetUserId)}:
          </div>
          <label>
             <textarea name="message" style="resize: none"></textarea>

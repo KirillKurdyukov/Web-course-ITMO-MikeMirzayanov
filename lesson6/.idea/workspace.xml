@@ -110,21 +110,15 @@
       <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/RegisterPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab6/target/classes/ru/itmo/wp/web/page/UsersPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/TalkRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/TalkRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/service/TalkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/service/TalkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/LogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/LogoutPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/TalksPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/TalksPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/TalksPage.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/TalksPage.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/repository/TalkRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/repository/TalkRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/service/TalkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/model/service/TalkService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/LogoutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/LogoutPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/TalksPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/web/page/TalksPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/TalkRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/TalkRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/service/TalkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/service/TalkService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/LogoutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/LogoutPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/TalksPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/TalksPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -276,7 +270,7 @@
       <workItem from="1604657751747" duration="12672000" />
       <workItem from="1605186450770" duration="843000" />
       <workItem from="1605189125377" duration="5170000" />
-      <workItem from="1605210486631" duration="23547000" />
+      <workItem from="1605210486631" duration="28484000" />
     </task>
     <servers />
   </component>
@@ -324,70 +318,70 @@
       <screen x="72" y="27" width="1464" height="837" />
     </state>
     <state x="590" y="218" width="424" height="496" key="FileChooserDialogImpl/72.27.1464.837@72.27.1464.837" timestamp="1604492155195" />
-    <state width="1177" height="181" key="GridCell.Tab.0.bottom" timestamp="1605265481140">
+    <state width="1081" height="181" key="GridCell.Tab.0.bottom" timestamp="1605276782136">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.0.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605265481140" />
-    <state width="1177" height="181" key="GridCell.Tab.0.center" timestamp="1605265481140">
+    <state width="1081" height="181" key="GridCell.Tab.0.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605276782136" />
+    <state width="1081" height="181" key="GridCell.Tab.0.center" timestamp="1605276782136">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.0.center/72.27.1464.837@72.27.1464.837" timestamp="1605265481140" />
-    <state width="1177" height="181" key="GridCell.Tab.0.left" timestamp="1605265481140">
+    <state width="1081" height="181" key="GridCell.Tab.0.center/72.27.1464.837@72.27.1464.837" timestamp="1605276782136" />
+    <state width="1081" height="181" key="GridCell.Tab.0.left" timestamp="1605276782135">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.0.left/72.27.1464.837@72.27.1464.837" timestamp="1605265481140" />
-    <state width="1177" height="181" key="GridCell.Tab.0.right" timestamp="1605265481140">
+    <state width="1081" height="181" key="GridCell.Tab.0.left/72.27.1464.837@72.27.1464.837" timestamp="1605276782135" />
+    <state width="1081" height="181" key="GridCell.Tab.0.right" timestamp="1605276782136">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.0.right/72.27.1464.837@72.27.1464.837" timestamp="1605265481140" />
-    <state width="1177" height="181" key="GridCell.Tab.1.bottom" timestamp="1605265357812">
+    <state width="1081" height="181" key="GridCell.Tab.0.right/72.27.1464.837@72.27.1464.837" timestamp="1605276782136" />
+    <state width="1081" height="181" key="GridCell.Tab.1.bottom" timestamp="1605276782137">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.1.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605265357812" />
-    <state width="1177" height="181" key="GridCell.Tab.1.center" timestamp="1605265357812">
+    <state width="1081" height="181" key="GridCell.Tab.1.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605276782137" />
+    <state width="1081" height="181" key="GridCell.Tab.1.center" timestamp="1605276782137">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.1.center/72.27.1464.837@72.27.1464.837" timestamp="1605265357812" />
-    <state width="1177" height="181" key="GridCell.Tab.1.left" timestamp="1605265357812">
+    <state width="1081" height="181" key="GridCell.Tab.1.center/72.27.1464.837@72.27.1464.837" timestamp="1605276782137" />
+    <state width="1081" height="181" key="GridCell.Tab.1.left" timestamp="1605276782137">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.1.left/72.27.1464.837@72.27.1464.837" timestamp="1605265357812" />
-    <state width="1177" height="181" key="GridCell.Tab.1.right" timestamp="1605265357812">
+    <state width="1081" height="181" key="GridCell.Tab.1.left/72.27.1464.837@72.27.1464.837" timestamp="1605276782137" />
+    <state width="1081" height="181" key="GridCell.Tab.1.right" timestamp="1605276782137">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.1.right/72.27.1464.837@72.27.1464.837" timestamp="1605265357812" />
-    <state width="1177" height="181" key="GridCell.Tab.2.bottom" timestamp="1605265357813">
+    <state width="1081" height="181" key="GridCell.Tab.1.right/72.27.1464.837@72.27.1464.837" timestamp="1605276782137" />
+    <state width="1081" height="181" key="GridCell.Tab.2.bottom" timestamp="1605276782138">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.2.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605265357813" />
-    <state width="1177" height="181" key="GridCell.Tab.2.center" timestamp="1605265357813">
+    <state width="1081" height="181" key="GridCell.Tab.2.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605276782138" />
+    <state width="1081" height="181" key="GridCell.Tab.2.center" timestamp="1605276782138">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.2.center/72.27.1464.837@72.27.1464.837" timestamp="1605265357813" />
-    <state width="1177" height="181" key="GridCell.Tab.2.left" timestamp="1605265357812">
+    <state width="1081" height="181" key="GridCell.Tab.2.center/72.27.1464.837@72.27.1464.837" timestamp="1605276782138" />
+    <state width="1081" height="181" key="GridCell.Tab.2.left" timestamp="1605276782137">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.2.left/72.27.1464.837@72.27.1464.837" timestamp="1605265357812" />
-    <state width="1177" height="181" key="GridCell.Tab.2.right" timestamp="1605265357813">
+    <state width="1081" height="181" key="GridCell.Tab.2.left/72.27.1464.837@72.27.1464.837" timestamp="1605276782137" />
+    <state width="1081" height="181" key="GridCell.Tab.2.right" timestamp="1605276782138">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.2.right/72.27.1464.837@72.27.1464.837" timestamp="1605265357813" />
-    <state width="1177" height="181" key="GridCell.Tab.3.bottom" timestamp="1605265357813">
+    <state width="1081" height="181" key="GridCell.Tab.2.right/72.27.1464.837@72.27.1464.837" timestamp="1605276782138" />
+    <state width="1081" height="181" key="GridCell.Tab.3.bottom" timestamp="1605276782139">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.3.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605265357813" />
-    <state width="1177" height="181" key="GridCell.Tab.3.center" timestamp="1605265357813">
+    <state width="1081" height="181" key="GridCell.Tab.3.bottom/72.27.1464.837@72.27.1464.837" timestamp="1605276782139" />
+    <state width="1081" height="181" key="GridCell.Tab.3.center" timestamp="1605276782138">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.3.center/72.27.1464.837@72.27.1464.837" timestamp="1605265357813" />
-    <state width="1177" height="181" key="GridCell.Tab.3.left" timestamp="1605265357813">
+    <state width="1081" height="181" key="GridCell.Tab.3.center/72.27.1464.837@72.27.1464.837" timestamp="1605276782138" />
+    <state width="1081" height="181" key="GridCell.Tab.3.left" timestamp="1605276782138">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.3.left/72.27.1464.837@72.27.1464.837" timestamp="1605265357813" />
-    <state width="1177" height="181" key="GridCell.Tab.3.right" timestamp="1605265357813">
+    <state width="1081" height="181" key="GridCell.Tab.3.left/72.27.1464.837@72.27.1464.837" timestamp="1605276782138" />
+    <state width="1081" height="181" key="GridCell.Tab.3.right" timestamp="1605276782139">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
-    <state width="1177" height="181" key="GridCell.Tab.3.right/72.27.1464.837@72.27.1464.837" timestamp="1605265357813" />
+    <state width="1081" height="181" key="GridCell.Tab.3.right/72.27.1464.837@72.27.1464.837" timestamp="1605276782139" />
     <state width="972" height="204" key="GridCell.Tab.4.bottom" timestamp="1604492219390">
       <screen x="72" y="27" width="1464" height="837" />
     </state>
@@ -430,7 +424,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.java</url>
-          <line>54</line>
+          <line>53</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -440,7 +434,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/web/page/TalksPage.java</url>
-          <line>29</line>
+          <line>28</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>

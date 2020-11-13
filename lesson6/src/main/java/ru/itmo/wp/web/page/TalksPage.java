@@ -1,6 +1,5 @@
 package ru.itmo.wp.web.page;
 
-import ru.itmo.wp.model.domain.User;
 import ru.itmo.wp.web.exception.RedirectException;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +15,7 @@ public class TalksPage extends Page {
         String targetUserId = (String) request.getSession().getAttribute("targetUserId");
         view.put("users", userService.findAll());
         if (targetUserId != null) {
-            view.put("targetUserId", targetUserId);
+            view.put("targetUserId", Long.parseLong(targetUserId));
             view.put("talks", talkService.getMessages(getUser().getId(), Long.parseLong(targetUserId)));
         }
     }
