@@ -1,5 +1,6 @@
 <#-- @ftlvariable name="user" type="ru.itmo.wp.model.domain.User" -->
 <#-- @ftlvariable name="message" type="java.lang.String" -->
+
 <#macro page>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,6 +37,9 @@
         <ul>
             <li><a href="/index">Home</a></li>
             <li><a href="/users">Users</a></li>
+            <#if user??>
+                <li><a href="/article">Article</a></li>
+            </#if>
         </ul>
     </nav>
 </header>
@@ -59,12 +63,12 @@
     </main>
 </div>
 <footer>
-    <a href="/index">Codeforces</a> &copy; 2019 by Mike Mirzayanov
+    <a href="/index">Codeforces</a> &copy; 2020 by Mike Mirzayanov and Kirill Kurdyukov
 </footer>
 <script>
     $(function () {
         <#if message??>
-            notify("${message?js_string}");
+            notify("${message?js_string}", 'success');
         </#if>
     })
 </script>

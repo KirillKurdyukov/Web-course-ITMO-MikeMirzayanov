@@ -25,6 +25,7 @@ public class UserService {
         if (user.getLogin().length() > 8) {
             throw new ValidationException("Login can't be longer than 8 letters");
         }
+
         if (userRepository.findByLogin(user.getLogin()) != null) {
             throw new ValidationException("Login is already in use");
         }
