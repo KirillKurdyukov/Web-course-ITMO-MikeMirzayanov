@@ -50,8 +50,10 @@
                     $tr.find(".user_login").text(user["login"]);
                     if (user["admin"]) {
                         $tr.find(".user_admin").text("disable");
+                        $tr.find(".user_admin").attr('value', "disable");
                     } else {
                         $tr.find(".user_admin").text("enable");
+                        $tr.find(".user_admin").attr('value', "enable");
                     }
                     $tr.find("tr").attr("data-userId", user["id"]);
                     $tr.find("td a").attr("data-userId", user["id"]);
@@ -59,15 +61,19 @@
                 });
                 $(".users .user_admin").click(function() {
                     const $form = $(this);
+                    const status = ($form.attr('value') === "enable");
                     const data = {
                         action: "changeAdmin",
-                        userId: $(this).attr("data-userId")
+                        userId: $(this).attr("data-userId"),
+                        status
                     };
                     const success =  function (response) {
-                        if(response["status"]) {
-                            $form.text("disable");
-                        } else {
+                        if(!status) {
                             $form.text("enable");
+                            $form.attr('value', "enable");
+                        } else {
+                            $form.text("disable");
+                            $form.attr('value', "disable");
                         }
                     };
                     ajax(data,success);

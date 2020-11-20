@@ -126,11 +126,11 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public void changeAdmin(User user) {
+    public void changeAdmin(User user, boolean status) {
         try (Connection connection = DATA_SOURCE.getConnection()) {
             try (PreparedStatement statement = connection.prepareStatement("UPDATE `User` SET admin=? WHERE id=?")) {
-                statement.setBoolean(1, !user.isAdmin());
-                user.setAdmin(!user.isAdmin());
+                statement.setBoolean(1, status);
+                user.setAdmin(status);
                 statement.setLong(2, user.getId());
                 if (statement.executeUpdate() != 1) {
                     throw new RepositoryException("Can't set status Article.");

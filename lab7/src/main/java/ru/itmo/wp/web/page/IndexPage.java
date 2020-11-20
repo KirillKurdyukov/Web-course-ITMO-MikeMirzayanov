@@ -30,7 +30,6 @@ public class IndexPage {
     private void findAll(HttpServletRequest request, Map<String, Object> view) {
         List<Article> articles = articleService.findAll();
         int size = 0;
-        Collections.reverse(articles);
         Map<Long, String> articleMap = new HashMap<>();
         for (Article article : articles) {
             articleMap.put(article.getUserId(), userService.find(article.getUserId()).getLogin());

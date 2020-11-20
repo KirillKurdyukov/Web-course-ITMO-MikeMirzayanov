@@ -16,7 +16,12 @@ public class UserArticlesPage {
     }
 
     private void changeArticle(HttpServletRequest request, Map<String, Object> view) throws ValidationException {
-        long id =  Long.parseLong(request.getParameter("id"));
+        long id;
+        try {
+            id = Long.parseLong(request.getParameter("id"));
+        } catch (NumberFormatException e) {
+            throw new ValidationException("No id");
+        }
         User user = (User) request.getSession().getAttribute("user");
         if (articleService.find(id).getUserId() != user.getId())
             throw new ValidationException("This user can't change this article!");

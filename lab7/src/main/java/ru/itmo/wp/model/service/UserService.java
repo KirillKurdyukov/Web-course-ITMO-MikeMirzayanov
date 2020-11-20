@@ -71,7 +71,7 @@ public class UserService {
         }
     }
 
-    public void changeAdmin(User user) {
-        userRepository.changeAdmin(user);
+    public void changeAdmin(User user, boolean status) {
+        userRepository.changeAdmin(user, status);
     }
 }

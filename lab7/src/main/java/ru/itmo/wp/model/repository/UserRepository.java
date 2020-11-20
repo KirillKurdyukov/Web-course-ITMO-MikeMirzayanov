@@ -15,5 +15,5 @@ public interface UserRepository {
 
     void save(User user, String passwordSha);
 
-    void changeAdmin(User user);
+    void changeAdmin(User user, boolean status);
 }

@@ -6,6 +6,7 @@ import ru.itmo.wp.model.service.UserService;
 import ru.itmo.wp.web.annotation.Json;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.swing.text.StyledEditorKit;
 import java.util.Map;
 
 /** @noinspection unused*/
@@ -31,9 +32,16 @@ public class UsersPage {
     private void changeAdmin(HttpServletRequest request, Map<String, Object> view) throws ValidationException {
         User user = (User) request.getSession().getAttribute("user");
         userService.validateAdmin(user);
-        User changeUser = userService.find(Long.parseLong(request.getParameter("userId")));
-        userService.changeAdmin(changeUser);
-        view.put("status", changeUser.isAdmin());
+        User changeUser;
+        boolean status;
+        try {
+            changeUser = userService.find(Long.parseLong(request.getParameter("userId")));
+            status = Boolean.parseBoolean(request.getParameter("status"));
+        } catch (NumberFormatException e) {
+            throw new ValidationException("No id");
+        }
+
+        userService.changeAdmin(changeUser, !status);
         long id = user.getId();
         request.getSession().removeAttribute("user");
         request.getSession().setAttribute("user", userService.find(id));
