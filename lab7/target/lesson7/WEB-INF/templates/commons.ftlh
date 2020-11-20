@@ -39,6 +39,7 @@
             <li><a href="/users">Users</a></li>
             <#if user??>
                 <li><a href="/article">Article</a></li>
+                <li><a href="/userArticles">MyArticles</a></li>
             </#if>
         </ul>
     </nav>

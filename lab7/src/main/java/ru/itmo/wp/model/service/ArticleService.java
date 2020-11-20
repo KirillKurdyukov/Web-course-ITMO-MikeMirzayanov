@@ -11,7 +11,7 @@ import ru.itmo.wp.model.repository.impl.UserRepositoryImpl;
 import java.util.List;
 
 public class ArticleService {
-    private final ArticleRepository articleRepository= new ArticleRepositoryImpl();
+    private final ArticleRepository articleRepository = new ArticleRepositoryImpl();
     private final UserRepository userRepository = new UserRepositoryImpl();
 
     public void save(Article article) {
@@ -32,4 +32,17 @@ public class ArticleService {
     public List<Article> findAll() {
         return articleRepository.findAll();
     }
+
+    public List<Article> findUserId(long id) {
+        return articleRepository.findUserId(id);
+    }
+
+    public Article find(long id) {
+        return articleRepository.find(id);
+    }
+
+    public void setArticleStatus(long id, boolean status) {
+        articleRepository.setArticleStatus(id, status);
+    }
+
 }

@@ -2,7 +2,6 @@ package ru.itmo.wp.model.repository.impl;
 
 import ru.itmo.wp.model.database.DatabaseUtils;
 import ru.itmo.wp.model.domain.Article;
-import ru.itmo.wp.model.domain.User;
 import ru.itmo.wp.model.exception.RepositoryException;
 import ru.itmo.wp.model.repository.ArticleRepository;
 
@@ -17,10 +16,11 @@ public class ArticleRepositoryImpl implements ArticleRepository {
     @Override
     public void save(Article article) {
         try (Connection connection = DATA_SOURCE.getConnection()) {
-            try (PreparedStatement statement = connection.prepareStatement("INSERT INTO `Article` (`userId`, `title`, `text`, `creationTime`) VALUES (?, ?, ?, NOW())", Statement.RETURN_GENERATED_KEYS)) {
+            try (PreparedStatement statement = connection.prepareStatement("INSERT INTO `Article` (`userId`, `title`, `text`, `creationTime`, `hidden`) VALUES (?, ?, ?, NOW(), ?)", Statement.RETURN_GENERATED_KEYS)) {
                 statement.setString(1, Long.toString(article.getUserId()));
                 statement.setString(2, article.getTitle());
                 statement.setString(3, article.getText());
+                statement.setBoolean(4, article.isHidden());
                 if (statement.executeUpdate() != 1) {
                     throw new RepositoryException("Can't save Article.");
                 } else {
@@ -72,6 +72,40 @@ public class ArticleRepositoryImpl implements ArticleRepository {
         return articles;
     }
 
+    @Override
+    public List<Article> findUserId(long id) {
+        List<Article> articles = new ArrayList<>();
+        try (Connection connection = DATA_SOURCE.getConnection()) {
+            try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM Article WHERE userId=?")) {
+                statement.setLong(1, id);
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    Article article;
+                    while ((article = toArticle(statement.getMetaData(), resultSet)) != null) {
+                        articles.add(article);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            throw new RepositoryException("Can't find Article.", e);
+        }
+        return articles;
+    }
+
+    @Override
+    public void setArticleStatus(long id, boolean status) {
+        try (Connection connection = DATA_SOURCE.getConnection()) {
+            try (PreparedStatement statement = connection.prepareStatement("UPDATE `Article` SET hidden=? WHERE id=?")) {
+                statement.setBoolean(1, status);
+                statement.setString(2, Long.toString(id));
+                if (statement.executeUpdate() != 1) {
+                    throw new RepositoryException("Can't set status Article.");
+                }
+            }
+        } catch (SQLException e) {
+            throw new RepositoryException("Can't find Article.", e);
+        }
+    }
+
     private Article toArticle(ResultSetMetaData metaData, ResultSet resultSet) throws SQLException {
         if (!resultSet.next()) {
             return null;
@@ -94,6 +128,9 @@ public class ArticleRepositoryImpl implements ArticleRepository {
                     break;
                 case "creationTime":
                     article.setCreationTime(resultSet.getTimestamp(i));
+                    break;
+                case "hidden":
+                    article.setHidden(resultSet.getBoolean(i));
                     break;
                 default:
                     // No operations.

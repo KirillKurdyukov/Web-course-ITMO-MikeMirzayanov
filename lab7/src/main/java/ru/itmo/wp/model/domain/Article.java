@@ -8,6 +8,15 @@ public class Article {
     private String title;
     private String text;
     private Date creationTime;
+    private boolean hidden;
+
+    public boolean isHidden() {
+        return hidden;
+    }
+
+    public void setHidden(boolean hidden) {
+        this.hidden = hidden;
+    }
 
     public long getId() {
         return id;

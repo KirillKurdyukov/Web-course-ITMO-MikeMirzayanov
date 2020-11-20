@@ -7,6 +7,15 @@ public class User implements Serializable {
     private long id;
     private String login;
     private Date creationTime;
+    private boolean admin;
+
+    public boolean isAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
 
     public long getId() {
         return id;

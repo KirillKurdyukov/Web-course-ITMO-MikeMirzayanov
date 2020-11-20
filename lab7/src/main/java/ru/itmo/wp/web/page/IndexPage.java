@@ -7,9 +7,7 @@ import ru.itmo.wp.model.service.UserService;
 import ru.itmo.wp.web.annotation.Json;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /** @noinspection unused*/
 public class IndexPage {
@@ -31,10 +29,16 @@ public class IndexPage {
     @Json
     private void findAll(HttpServletRequest request, Map<String, Object> view) {
         List<Article> articles = articleService.findAll();
+        int size = 0;
+        Collections.reverse(articles);
         Map<Long, String> articleMap = new HashMap<>();
-        for (Article article : articles)
+        for (Article article : articles) {
             articleMap.put(article.getUserId(), userService.find(article.getUserId()).getLogin());
+            if (!article.isHidden())
+                size++;
+        }
         view.put("articles", articles);
+        view.put("size", size);
         view.put("articleMap", articleMap);
     }
 }

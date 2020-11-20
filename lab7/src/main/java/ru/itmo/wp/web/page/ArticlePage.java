@@ -1,6 +1,5 @@
 package ru.itmo.wp.web.page;
 
-import org.checkerframework.checker.units.qual.A;
 import ru.itmo.wp.model.domain.Article;
 import ru.itmo.wp.model.domain.User;
 import ru.itmo.wp.model.exception.ValidationException;
@@ -27,6 +26,7 @@ public class ArticlePage {
         article.setUserId(user.getId());
         article.setTitle(request.getParameter("title"));
         article.setText(request.getParameter("text"));
+        article.setHidden(false);
         articleService.validateArticle(article);
         articleService.save(article);
         throw new RedirectException("/index");

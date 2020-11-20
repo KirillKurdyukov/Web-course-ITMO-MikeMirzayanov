@@ -64,4 +64,14 @@ public class UserService {
         }
         return user;
     }
+
+    public void validateAdmin(User user) throws ValidationException {
+        if (!user.isAdmin()) {
+            throw new ValidationException("You aren't admin");
+        }
+    }
+
+    public void changeAdmin(User user) {
+        userRepository.changeAdmin(user);
+    }
 }

@@ -10,4 +10,8 @@ public interface ArticleRepository {
     Article find(long id);
 
     List<Article> findAll();
+
+    List<Article> findUserId(long id);
+
+    void setArticleStatus(long id, boolean status);
 }

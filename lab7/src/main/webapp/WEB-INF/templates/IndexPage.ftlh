@@ -38,14 +38,20 @@
                 action: "findAll"
             };
             const success = function (response) {
-                response["articles"].forEach(function(article) {
-                    $noData.hide();
-                    const $tr = $($(".articles template").prop("content")).clone();
-                    $tr.find(".title").text(article["title"]);
-                    $tr.find(".text").text(article["text"]);
-                    $tr.find(".information").text("By " + response["articleMap"][article["userId"]]);
-                    $(".articles").append($tr);
-                });
+                if (response["size"]> 0) {
+                    response["articles"].forEach(function (article) {
+                        if (!article["hidden"]) {
+                            $noData.hide();
+                            const $tr = $($(".articles template").prop("content")).clone();
+                            $tr.find(".title").text(article["title"]);
+                            $tr.find(".text").text(article["text"]);
+                            $tr.find(".information").text("By " + response["articleMap"][article["userId"]]);
+                            $(".articles").append($tr);
+                        }
+                    });
+                } else {
+                    $noData.text("No articles");
+                }
             }
             ajax(data, success);
         })

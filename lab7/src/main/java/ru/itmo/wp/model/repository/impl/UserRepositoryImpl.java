@@ -91,6 +91,8 @@ public class UserRepositoryImpl implements UserRepository {
                 case "creationTime":
                     user.setCreationTime(resultSet.getTimestamp(i));
                     break;
+                case "admin":
+                    user.setAdmin(resultSet.getBoolean(i));
                 default:
                     // No operations.
             }
@@ -102,9 +104,10 @@ public class UserRepositoryImpl implements UserRepository {
     @Override
     public void save(User user, String passwordSha) {
         try (Connection connection = DATA_SOURCE.getConnection()) {
-            try (PreparedStatement statement = connection.prepareStatement("INSERT INTO `User` (`login`, `passwordSha`, `creationTime`) VALUES (?, ?, NOW())", Statement.RETURN_GENERATED_KEYS)) {
+            try (PreparedStatement statement = connection.prepareStatement("INSERT INTO `User` (`login`, `passwordSha`, `creationTime`, `admin`) VALUES (?, ?, NOW(), ?)", Statement.RETURN_GENERATED_KEYS)) {
                 statement.setString(1, user.getLogin());
                 statement.setString(2, passwordSha);
+                statement.setBoolean(3, user.isAdmin());
                 if (statement.executeUpdate() != 1) {
                     throw new RepositoryException("Can't save User.");
                 } else {
@@ -119,6 +122,22 @@ public class UserRepositoryImpl implements UserRepository {
             }
         } catch (SQLException e) {
             throw new RepositoryException("Can't save User.", e);
+        }
+    }
+
+    @Override
+    public void changeAdmin(User user) {
+        try (Connection connection = DATA_SOURCE.getConnection()) {
+            try (PreparedStatement statement = connection.prepareStatement("UPDATE `User` SET admin=? WHERE id=?")) {
+                statement.setBoolean(1, !user.isAdmin());
+                user.setAdmin(!user.isAdmin());
+                statement.setLong(2, user.getId());
+                if (statement.executeUpdate() != 1) {
+                    throw new RepositoryException("Can't set status Article.");
+                }
+            }
+        } catch (SQLException e) {
+            throw new RepositoryException("Can't find Article.", e);
         }
     }
 }
