@@ -27,8 +27,9 @@ public class UsersPage extends Page {
     }
 
     @PostMapping("/users/all")
-    public String status(Model model, StatusForm statusForm) {
-        userService.setStatus(statusForm.getUserId(), statusForm.getStatus().equals("Disable"));
+    public String status(Model model, StatusForm statusForm, HttpSession httpSession) {
+        if (getUser(httpSession).getId() !=  statusForm.getUserId())
+            userService.setStatus(statusForm.getUserId(), statusForm.getStatus().equals("Disable"));
         model.addAttribute("users", userService.findAll());
         return "UsersPage";
     }

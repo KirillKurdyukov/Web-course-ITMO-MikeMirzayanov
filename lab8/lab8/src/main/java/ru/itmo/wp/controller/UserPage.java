@@ -24,7 +24,7 @@ public class UserPage extends Page {
     @GetMapping("/user/{id}")
     public String user(Model model, @PathVariable("id") String id) {
         try {
-            model.addAttribute("user", userService.findById(Long.parseLong(id)));
+            model.addAttribute("userCurrent", userService.findById(Long.parseLong(id)));
         } catch (NumberFormatException e) {
             // No operation
         }
@@ -35,7 +35,7 @@ public class UserPage extends Page {
     @GetMapping("user")
     public String emptyUser(HttpSession httpSession) {
         putMessage(httpSession, "please write userId");
-        return "redirect:";
+        return "UserPage";
     }
 
 }

@@ -1,9 +1,9 @@
-<#-- @ftlvariable name="user" type="ru.itmo.wp.domain.User" -->
+<#-- @ftlvariable name="userCurrent" type="ru.itmo.wp.domain.User" -->
 <#import "/spring.ftl" as spring>
 <#import "commons.ftlh" as c>
 
 <@c.page>
-    <#if user??>
+    <#if userCurrent??>
         <div class="users datatable">
             <div class="caption">User</div>
             <table>
@@ -11,15 +11,14 @@
                 <tr>
                     <th>Id</th>
                     <th>Login</th>
-                    <th>Status</th>
                     <th>Created</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td class="id">${user.id}</td>
-                    <td class="login">${user.login}</td>
-                    <td class="creationTime">${user.creationTime}</td>
+                    <td class="id">${userCurrent.id}</td>
+                    <td class="login">${userCurrent.login}</td>
+                    <td class="creationTime">${userCurrent.creationTime}</td>
                 </tr>
                 </tbody>
             </table>

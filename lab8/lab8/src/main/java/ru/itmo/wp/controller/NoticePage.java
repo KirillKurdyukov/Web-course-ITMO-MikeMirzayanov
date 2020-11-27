@@ -1,10 +1,13 @@
 package ru.itmo.wp.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import ru.itmo.wp.form.NoticeForm;
+import ru.itmo.wp.form.UserCredentials;
 import ru.itmo.wp.service.NoticeService;
 
 import javax.servlet.http.HttpSession;
@@ -19,15 +22,15 @@ public class NoticePage extends Page {
     }
 
     @GetMapping("/notice")
-    public String notice() {
+    public String notice(Model model) {
+        model.addAttribute("noticeForm", new NoticeForm());
         return "NoticePage";
     }
 
     @PostMapping("/notice")
-    public String doNotice(@Valid NoticeForm noticeForm, BindingResult bindingResult,
+    public String doNotice(@Valid @ModelAttribute("noticeForm") NoticeForm noticeForm, BindingResult bindingResult,
                            HttpSession httpSession) {
         if (bindingResult.hasErrors()) {
-            putMessage(httpSession, "No correct notice!");
             return "NoticePage";
         }
 
