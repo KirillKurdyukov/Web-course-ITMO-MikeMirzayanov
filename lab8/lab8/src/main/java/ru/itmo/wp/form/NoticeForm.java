@@ -18,7 +18,7 @@ public class NoticeForm {
     @NotEmpty(message = "The message can't be empty!")
     @Lob
     @Size(min = 1, max = 255, message =
-            "You have exceeded the size of the notification")
+            "You have exceeded the size of the notification (maxSize = 255)")
     private String content;
 
 }
