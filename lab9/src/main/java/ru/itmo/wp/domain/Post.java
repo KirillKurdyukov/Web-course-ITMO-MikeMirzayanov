@@ -45,10 +45,18 @@ public class Post {
         this.comments = comments;
     }
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    public Set<Tag> getTagSet() {
+        return tagSet;
+    }
+
+    public void setTagSet(Set<Tag> tagSet) {
+        this.tagSet = tagSet;
+    }
+
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "post_tag",
             joinColumns = @JoinColumn(name = "post_id"),
-            inverseJoinColumns = @JoinColumn(name = "tage_id")
+            inverseJoinColumns = @JoinColumn(name = "tag_id")
     )
     private Set<Tag> tagSet;
 

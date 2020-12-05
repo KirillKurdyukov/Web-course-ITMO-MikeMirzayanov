@@ -12,15 +12,13 @@ public class Tag {
     @GeneratedValue
     private long id;
 
-    @NotNull
-    @Enumerated(EnumType.STRING)
-    private TagName name;
+    private String name;
 
     /** @noinspection unused*/
     public Tag() {
     }
 
-    public Tag(@NotNull Tag.TagName name) {
+    public Tag(String name) {
         this.name = name;
     }
 
@@ -32,18 +30,12 @@ public class Tag {
         this.id = id;
     }
 
-    public TagName getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(TagName name) {
+    public void setName(String name) {
         this.name = name;
-    }
-
-    public enum TagName {
-        INFO,
-        TALK,
-        POLL
     }
 
 }

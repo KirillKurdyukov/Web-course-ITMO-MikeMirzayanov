@@ -4,5 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import ru.itmo.wp.domain.Tag;
 
 public interface TagRepository extends JpaRepository<Tag, Long> {
-    int countByName(Tag.TagName name);
+    int countByName(String name);
+
+    Tag findByName(String name);
 }
