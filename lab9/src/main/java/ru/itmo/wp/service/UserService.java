@@ -11,9 +11,7 @@ import ru.itmo.wp.repository.RoleRepository;
 import ru.itmo.wp.repository.TagRepository;
 import ru.itmo.wp.repository.UserRepository;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Service
 public class UserService {
@@ -69,7 +67,7 @@ public class UserService {
         Post post = new Post();
         post.setTitle(postForm.getTitle());
         post.setText(postForm.getText());
-        Set<Tag> tags = new HashSet<>();
+        Set<Tag> tags = new TreeSet<>();
         for (String name : postForm.getTags().split(" ")) {
             Tag tag = new Tag(name);
             if (tagRepository.countByName(name) == 0)

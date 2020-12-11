@@ -1,13 +1,12 @@
 package ru.itmo.wp.domain;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(
         uniqueConstraints = @UniqueConstraint(columnNames = "name")
 )
-public class Tag {
+public class Tag implements Comparable<Tag>{
     @Id
     @GeneratedValue
     private long id;
@@ -38,4 +37,8 @@ public class Tag {
         this.name = name;
     }
 
+    @Override
+    public int compareTo(Tag tag) {
+        return this.getName().compareTo(tag.getName());
+    }
 }
