@@ -67,7 +67,7 @@ public class UserService {
         Post post = new Post();
         post.setTitle(postForm.getTitle());
         post.setText(postForm.getText());
-        Set<Tag> tags = new TreeSet<>();
+        SortedSet<Tag> tags = new TreeSet<>();
         for (String name : postForm.getTags().split(" ")) {
             Tag tag = new Tag(name);
             if (tagRepository.countByName(name) == 0)

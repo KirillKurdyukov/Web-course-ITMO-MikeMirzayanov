@@ -41,4 +41,10 @@ public class Tag implements Comparable<Tag>{
     public int compareTo(Tag tag) {
         return this.getName().compareTo(tag.getName());
     }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode();
+    }
+
 }
