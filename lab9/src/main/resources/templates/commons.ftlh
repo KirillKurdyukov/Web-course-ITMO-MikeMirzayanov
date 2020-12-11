@@ -90,6 +90,12 @@
 <#-- @ftlvariable name="post" type="ru.itmo.wp.domain.Post" -->
     <article>
         <a href="/post/${post.id}" class="title">${post.title}</a>
+        <div>
+            Tag:
+            <#list post.tagSet as tag>
+                ${tag.name}
+            </#list>
+        </div>
         <div class="information">By ${post.user.login}, ${post.creationTime}</div>
         <div class="body">${post.text}</div>
         <ul class="attachment">

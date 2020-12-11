@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import ru.itmo.wp.domain.Comment;
 import ru.itmo.wp.domain.Post;
+import ru.itmo.wp.security.Guest;
 import ru.itmo.wp.service.PostService;
 
 import javax.servlet.http.HttpSession;
@@ -23,6 +24,8 @@ public class PostPage extends Page{
     }
 
 
+
+    @Guest
     @GetMapping("/post/{id}")
     public String postGet(Model model, @PathVariable("id") String id) {
         try {
