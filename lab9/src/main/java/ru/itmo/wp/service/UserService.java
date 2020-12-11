@@ -67,14 +67,24 @@ public class UserService {
         Post post = new Post();
         post.setTitle(postForm.getTitle());
         post.setText(postForm.getText());
-        SortedSet<Tag> tags = new TreeSet<>();
+        List<Tag> tags = new ArrayList<>();
         for (String name : postForm.getTags().split(" ")) {
+            if (name.isEmpty()) {
+                continue;
+            }
             Tag tag = new Tag(name);
             if (tagRepository.countByName(name) == 0)
                 tagRepository.save(tag);
             else
                 tag = tagRepository.findByName(name);
-            tags.add(tag);
+            boolean flag = true;
+            for (Tag tagInTags : tags)
+                if (tagInTags.getName().equals(name)) {
+                    flag = false;
+                    break;
+                }
+            if (flag)
+                tags.add(tag);
         }
         post.setTagSet(tags);
         user.addPost(post);

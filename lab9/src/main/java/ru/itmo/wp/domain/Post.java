@@ -45,11 +45,11 @@ public class Post {
         this.comments = comments;
     }
 
-    public Set<Tag> getTagSet() {
+    public List<Tag> getTagSet() {
         return tagSet;
     }
 
-    public void setTagSet(Set<Tag> tagSet) {
+    public void setTagSet(List<Tag> tagSet) {
         this.tagSet = tagSet;
     }
 
@@ -58,7 +58,9 @@ public class Post {
             joinColumns = @JoinColumn(name = "post_id"),
             inverseJoinColumns = @JoinColumn(name = "tag_id")
     )
-    private Set<Tag> tagSet;
+
+    @OrderBy("name asc")
+    private List<Tag> tagSet;
 
     @CreationTimestamp
     private Date creationTime;
