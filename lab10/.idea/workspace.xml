@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b49ac06-6bd9-4f46-8226-8ce85b6cb4c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/middle/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/middle/Users.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/post/Post.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/post/Posts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Middle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Middle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/middle/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/middle/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6.7z" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/artifacts/lesson6_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/artifacts/lesson6_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/dataSources/ae946042-e573-4b81-b76c-1408d91f7db3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/dataSources/ae946042-e573-4b81-b76c-1408d91f7db3/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/libraries/Maven__com_google_guava_guava_30_0_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/libraries/Maven__org_freemarker_freemarker_2_3_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/libraries/Maven__org_mariadb_jdbc_mariadb_java_client_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/lesson6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/profile.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/database/DatabaseUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/domain/Event.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/domain/Talk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/exception/RepositoryException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/exception/ValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/repository/EventRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/repository/TalkRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/repository/impl/EventRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/service/EventService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/service/TalkService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/web/FrontServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/web/StaticFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/web/exception/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/web/exception/RedirectException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/web/page/EnterPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/web/page/IndexPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/web/page/LogoutPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/web/page/NotFoundPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/web/page/Page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/web/page/RegisterPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/web/page/TalksPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/web/page/UsersPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/WEB-INF/templates/EnterPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/WEB-INF/templates/IndexPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/WEB-INF/templates/NotFoundPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/WEB-INF/templates/RegisterPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/WEB-INF/templates/TalksPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/WEB-INF/templates/UsersPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/WEB-INF/templates/commons.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/css/datatable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/css/form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/img/comments_16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/img/date_16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/img/gb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/img/paperclip-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/img/ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/img/search-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/img/votedown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/webapp/img/voteup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/database/DatabaseUtils$DataSourceHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/database/DatabaseUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/domain/Event$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/domain/Event.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/domain/Talk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/exception/RepositoryException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/exception/ValidationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/repository/EventRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/repository/TalkRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/repository/impl/EventRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/service/EventService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/service/TalkService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/model/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/FrontServlet$Route.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/FrontServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/StaticFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/exception/NotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/exception/RedirectException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/page/EnterPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/page/IndexPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/page/LogoutPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/page/NotFoundPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/page/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/page/RegisterPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/page/TalksPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/classes/ru/itmo/wp/web/page/UsersPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/database/DatabaseUtils$DataSourceHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/database/DatabaseUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/domain/Event$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/domain/Event.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/domain/Talk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/exception/RepositoryException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/exception/ValidationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/EventRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/TalkRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/impl/EventRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/impl/TalkRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/repository/impl/UserRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/service/EventService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/service/TalkService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/model/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/FrontServlet$Route.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/FrontServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/StaticFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/exception/NotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/exception/RedirectException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/EnterPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/IndexPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/LogoutPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/NotFoundPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/RegisterPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/TalksPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/classes/ru/itmo/wp/web/page/UsersPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/lib/checker-qual-3.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/lib/error_prone_annotations-2.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/lib/failureaccess-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/lib/freemarker-2.3.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/lib/guava-30.0-jre.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/lib/j2objc-annotations-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/lib/jsr305-3.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/lib/mariadb-java-client-2.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/templates/EnterPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/templates/IndexPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/templates/NotFoundPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/templates/RegisterPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/templates/TalksPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/templates/UsersPage.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/templates/commons.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/css/datatable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/css/form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/img/comments_16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/img/date_16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/img/gb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/img/paperclip-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/img/ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/img/search-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/img/votedown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/target/lesson6/img/voteup.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1lTkZibMSyb8UxfCyP9SWrpWDhb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Vue" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b49ac06-6bd9-4f46-8226-8ce85b6cb4c7" name="Default Changelist" comment="" />
+      <created>1607628525772</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607628525772</updated>
+      <workItem from="1607628527553" duration="1677000" />
+      <workItem from="1607687442802" duration="5000" />
+      <workItem from="1607760410806" duration="6935000" />
+      <workItem from="1607768092291" duration="2581000" />
+      <workItem from="1607772037900" duration="207000" />
+      <workItem from="1607840915618" duration="5037000" />
+      <workItem from="1607847973811" duration="3127000" />
+      <workItem from="1607884273718" duration="300000" />
+      <workItem from="1607927225006" duration="2051000" />
+      <workItem from="1607954597056" duration="4442000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

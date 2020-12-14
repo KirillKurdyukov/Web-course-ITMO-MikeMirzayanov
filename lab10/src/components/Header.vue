@@ -9,6 +9,8 @@
         </div>
         <div class="enter-or-register-box">
             <template v-if="userId">
+                {{ users[userId].login}}
+                |
                 {{ users[userId].name }}
                 |
                 <a href="#" @click.prevent="onLogout">Logout</a>
@@ -16,13 +18,13 @@
             <template v-else>
                 <a href="#" @click.prevent="changePage('Enter')">Enter</a>
                 |
-                <a href="#">Register</a>
+                <a href="#" @click.prevent="changePage('Register')">Register</a>
             </template>
         </div>
         <nav>
             <ul>
                 <li><a href="#" @click.prevent="changePage('Index')">Home</a></li>
-                <li><a href="#">Users</a></li>
+                <li v-if="userId"><a href="#" @click.prevent="changePage('Users')">Users</a></li>
                 <li v-if="userId"><a href="#" @click.prevent="changePage('WritePost')">Write Post</a></li>
                 <li v-if="userId"><a href="#" @click.prevent="changePage('EditPost')">Edit Post</a></li>
             </ul>

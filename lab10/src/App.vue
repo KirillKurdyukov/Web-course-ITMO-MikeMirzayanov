@@ -1,8 +1,8 @@
 <template>
     <div id="app">
         <Header :userId="userId" :users="users"/>
-        <Middle :posts="posts"/>
-        <Footer/>
+        <Middle :posts="posts" :users="users" :comments="comments"/>
+        <Footer :countUsers="Object.keys(this.users).length" :countPosts="Object.keys(this.posts).length"/>
     </div>
 </template>
 
@@ -74,6 +74,41 @@ export default {
                 }
             } else {
                 this.$root.$emit("onEditPostValidationError", "No access");
+            }
+        });
+
+        this.$root.$on("onRegisterUser", (login, user_name) => {
+            if (login.length < 3) {
+               this.$root.$emit("onRegisterValidationError", "Login is too short");
+               return;
+            }
+
+            if (login.length > 16) {
+                this.$root.$emit("onRegisterValidationError", "Login is too long");
+                return;
+            }
+
+            const findUsers = Object.values(this.users).filter(u => u.login === login);
+
+            if (findUsers.length) {
+                this.$root.$emit("onRegisterValidationError", "The user already exists with this login");
+                return;
+            }
+
+            if (user_name.length < 1) {
+                this.$root.$emit("onRegisterValidationError", "Our name is too short");
+                return;
+            }
+
+            if (user_name.length > 32) {
+                this.$root.$emit("onRegisterValidationError", "Our name is too long");
+            } else {
+              const id = Math.max(...Object.keys(this.users)) + 1;
+              this.$root.$set(this.users, id, {
+                  id, login, name: user_name, admin: false
+              });
+              this.userId = id;
+              this.$root.$emit("onChangePage", "Index");
             }
         });
     }
