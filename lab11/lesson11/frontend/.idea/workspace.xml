@@ -24,8 +24,6 @@
       <change beforePath="$PROJECT_DIR$/../../../lab10/node_modules/.cache/vue-loader/fe70e3f5ee2feab55e6c78f71f2275f3.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab10/node_modules/.cache/vue-loader/fe70e3f5ee2feab55e6c78f71f2275f3.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../lab10/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab10/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../lab10/src/components/sidebar/SidebarPost.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab10/src/components/sidebar/SidebarPost.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../lesson6.7z" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../lesson6/.idea/artifacts/lesson6_war.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../lesson6/.idea/artifacts/lesson6_war_exploded.xml" beforeDir="false" />
@@ -274,7 +272,7 @@
       <workItem from="1608228788252" duration="3714000" />
       <workItem from="1608273953703" duration="9968000" />
       <workItem from="1608299718078" duration="1689000" />
-      <workItem from="1608303752192" duration="1491000" />
+      <workItem from="1608303752192" duration="1790000" />
     </task>
     <servers />
   </component>

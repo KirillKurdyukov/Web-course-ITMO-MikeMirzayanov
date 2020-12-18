@@ -88,6 +88,11 @@ export default {
                 return;
             }
 
+            if (!login.match(/[a-z]{3,16}/)) {
+                this.$root.$emit("onRegisterValidationError", "\n" +
+                    "English lowercase characters only");
+                return;
+            }
             const findUsers = Object.values(this.users).filter(u => u.login === login);
 
             if (findUsers.length) {
