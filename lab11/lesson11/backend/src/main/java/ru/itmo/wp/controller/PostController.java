@@ -59,7 +59,7 @@ public class PostController {
         }
 
         Comment comment = new Comment();
-        comment.setText(comment.getText());
+        comment.setText(commentForm.getText());
         comment.setUser(jwtService.find(commentForm.getJwt()));
         postService.writeComment(postService.findById(commentForm.getPostId()), comment);
     }

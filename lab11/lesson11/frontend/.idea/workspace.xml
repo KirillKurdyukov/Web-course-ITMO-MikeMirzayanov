@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="35c6145a-18b1-4354-a3b0-3f074e7f9e54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../lesson6.7z" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../lesson6/.idea/artifacts/lesson6_war.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../lesson6/.idea/artifacts/lesson6_war_exploded.xml" beforeDir="false" />
@@ -253,7 +252,7 @@
       <workItem from="1608273953703" duration="9968000" />
       <workItem from="1608299718078" duration="1689000" />
       <workItem from="1608303752192" duration="1790000" />
-      <workItem from="1608307035290" duration="2778000" />
+      <workItem from="1608307035290" duration="2797000" />
     </task>
     <servers />
   </component>
