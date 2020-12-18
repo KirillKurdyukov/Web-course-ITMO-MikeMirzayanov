@@ -8,6 +8,7 @@ import ru.itmo.wp.domain.User;
 import ru.itmo.wp.exception.ValidationException;
 import ru.itmo.wp.form.CommentForm;
 import ru.itmo.wp.form.PostForm;
+import ru.itmo.wp.service.JwtService;
 import ru.itmo.wp.service.PostService;
 import ru.itmo.wp.service.UserService;
 
@@ -20,10 +21,12 @@ import java.util.List;
 public class PostController {
     private final PostService postService;
     private final UserService userService;
+    private final JwtService jwtService;
 
-    public PostController(PostService postService, UserService userService) {
+    public PostController(PostService postService, UserService userService, JwtService jwtService) {
         this.postService = postService;
         this.userService = userService;
+        this.jwtService = jwtService;
     }
 
     @GetMapping("posts")
@@ -33,15 +36,14 @@ public class PostController {
 
     @PostMapping("posts")
     public void writePost(@RequestBody @Valid PostForm postForm,
-                          BindingResult bindingResult,
-                          HttpSession httpSession) {
+                          BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             throw new ValidationException(bindingResult);
         }
         Post post = new Post();
         post.setTitle(postForm.getTitle());
         post.setText(postForm.getText());
-        userService.writePost((User) httpSession.getAttribute("user"), post);
+        userService.writePost(jwtService.find(postForm.getJwt()), post);
     }
 
     @PostMapping("comments")

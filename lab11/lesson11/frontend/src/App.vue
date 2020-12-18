@@ -41,8 +41,9 @@ export default {
     },
     beforeCreate() {
         this.$root.$on("onWritePost", (title, text) => {
+            const jwt = localStorage.getItem("jwt");
             axios.post("/api/1/posts", {
-                title, text
+                jwt, title, text
                 // eslint-disable-next-line no-unused-vars
             }).then(response => {
                 this.$root.$emit("onChangePage", "Index");

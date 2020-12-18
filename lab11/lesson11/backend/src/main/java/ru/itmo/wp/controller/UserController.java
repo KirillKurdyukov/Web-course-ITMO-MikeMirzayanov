@@ -50,7 +50,6 @@ public class UserController {
             throw new ValidationException(bindingResult);
         }
         User user = userService.register(registerForm);
-        httpSession.setAttribute("user", user);
         return user;
     }
 }

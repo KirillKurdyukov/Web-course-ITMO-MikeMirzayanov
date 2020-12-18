@@ -1,12 +1,21 @@
 package ru.itmo.wp.form;
-
-import ru.itmo.wp.domain.User;
-
 import javax.persistence.Lob;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 public class PostForm {
+
+    public String getJwt() {
+        return jwt;
+    }
+
+    public void setJwt(String jwt) {
+        this.jwt = jwt;
+    }
+
+    @NotEmpty
+    private String jwt;
+
     @NotEmpty
     @Size(min = 1, max = 60)
     private String title;
