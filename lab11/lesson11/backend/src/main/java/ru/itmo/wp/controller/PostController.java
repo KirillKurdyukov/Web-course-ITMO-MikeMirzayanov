@@ -12,7 +12,7 @@ import ru.itmo.wp.service.JwtService;
 import ru.itmo.wp.service.PostService;
 import ru.itmo.wp.service.UserService;
 
-import javax.servlet.http.HttpSession;
+
 import javax.validation.Valid;
 import java.util.List;
 
@@ -43,20 +43,24 @@ public class PostController {
         Post post = new Post();
         post.setTitle(postForm.getTitle());
         post.setText(postForm.getText());
+        User user = jwtService.find(postForm.getJwt());
+        if (user == null) {
+            bindingResult.rejectValue("jwt", "incorrect Jwt");
+            throw new ValidationException(bindingResult);
+        }
         userService.writePost(jwtService.find(postForm.getJwt()), post);
     }
 
     @PostMapping("comments")
     public void writeComments(@RequestBody @Valid CommentForm commentForm,
-                              BindingResult bindingResult,
-                              HttpSession httpSession) {
+                              BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             throw new ValidationException(bindingResult);
         }
 
         Comment comment = new Comment();
         comment.setText(comment.getText());
-        comment.setUser((User) httpSession.getAttribute("user"));
-        postService.writeComment(postService.findById(commentForm.getId()), comment);
+        comment.setUser(jwtService.find(commentForm.getJwt()));
+        postService.writeComment(postService.findById(commentForm.getPostId()), comment);
     }
 }

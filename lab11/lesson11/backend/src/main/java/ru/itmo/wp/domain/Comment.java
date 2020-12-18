@@ -1,6 +1,7 @@
 package ru.itmo.wp.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
@@ -20,11 +21,12 @@ public class Comment {
     @Lob
     private String text;
 
-    @ManyToOne(fetch=FetchType.EAGER)
+    @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @ManyToOne(fetch=FetchType.EAGER)
+    @JsonIgnore
+    @ManyToOne
     @JoinColumn(name = "post_id", nullable = false)
     private Post post;
 

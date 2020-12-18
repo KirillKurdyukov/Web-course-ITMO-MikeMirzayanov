@@ -46,17 +46,23 @@ export default {
                 jwt, title, text
                 // eslint-disable-next-line no-unused-vars
             }).then(response => {
+                axios.get("/api/1/posts").then(response => {
+                    this.posts = response.data;
+                });
                 this.$root.$emit("onChangePage", "Index");
             }).catch(error => {
                 this.$root.$emit("onWritePostValidationError", error.response.data);
             })
         })
         this.$root.$on("onCommentWrite", (postId, text) => {
+            const jwt = localStorage.getItem("jwt");
             axios.post("/api/1/comments", {
-                postId, text
+                jwt, postId, text
                 // eslint-disable-next-line no-unused-vars
             }).then(response => {
-                alert("Ok");
+                axios.get("/api/1/posts").then(response => {
+                    this.posts = response.data;
+                });
             }).catch(error => {
                 this.$root.$emit("onWriteCommentValidationError", error.response.data);
             })
